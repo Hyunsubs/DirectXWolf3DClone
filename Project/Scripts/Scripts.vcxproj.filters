@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Default">
+      <UniqueIdentifier>{6fe6f3ca-d27d-4b61-b465-8fad7f9da689}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scripts">
+      <UniqueIdentifier>{362e4d15-288c-4a3f-95b7-580450f09124}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptMgr">
+      <UniqueIdentifier>{c2e071c7-0169-44c5-9189-b2695f5876fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scripts\MgrScripts">
+      <UniqueIdentifier>{7e795d57-96f7-476b-b623-e6a7dd7024d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scripts\Objects">
+      <UniqueIdentifier>{a091fb13-686c-4963-8034-450bdaab1fe3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scripts\UI">
+      <UniqueIdentifier>{3b3dcccc-0b06-49f1-9ae9-355448e17078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scripts\GameSystem">
+      <UniqueIdentifier>{fce673d1-b871-44fc-95aa-035ce5507770}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scripts\PostProcess">
+      <UniqueIdentifier>{f092082e-a041-456c-afc8-e4a99f7e4506}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>Default</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Default</Filter>
+    </ClInclude>
+    <ClInclude Include="CScriptMgr.h">
+      <Filter>ScriptMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="CSpriteScript.h">
+      <Filter>Scripts\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="CCameraMoveScript.h">
+      <Filter>Scripts\MgrScripts</Filter>
+    </ClInclude>
+    <ClInclude Include="CMonsterScript.h">
+      <Filter>Scripts\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="CBulletScript.h">
+      <Filter>Scripts\GameSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="CPlayerHandScript.h">
+      <Filter>Scripts\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="CPlayerStatusScript.h">
+      <Filter>Scripts\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="CPlayerScript.h">
+      <Filter>Scripts\GameSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="CPickupScript.h">
+      <Filter>Scripts\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="CRayCastRendererScript.h">
+      <Filter>Scripts\GameSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="CFadeScript.h">
+      <Filter>Scripts\PostProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="CLevelChangerScript.h">
+      <Filter>Scripts\MgrScripts</Filter>
+    </ClInclude>
+    <ClInclude Include="CTimerScript.h">
+      <Filter>Scripts\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="CCameraSideWalkScript.h">
+      <Filter>Scripts\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="CInterMissionScript.h">
+      <Filter>Scripts\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="CPlayerSelectWeapon.h">
+      <Filter>Scripts\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="CFontPrintScript.h">
+      <Filter>Scripts\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="CAlphaNoiseScript.h">
+      <Filter>Scripts\PostProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="CUiAnimScript.h">
+      <Filter>Scripts\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="CDelayedInstantiator.h">
+      <Filter>Scripts\MgrScripts</Filter>
+    </ClInclude>
+    <ClInclude Include="CFlashFont.h">
+      <Filter>Scripts\UI</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>Default</Filter>
+    </ClCompile>
+    <ClCompile Include="Scripts.cpp">
+      <Filter>Default</Filter>
+    </ClCompile>
+    <ClCompile Include="CScriptMgr.cpp">
+      <Filter>ScriptMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="CSpriteScript.cpp">
+      <Filter>Scripts\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="CCameraMoveScript.cpp">
+      <Filter>Scripts\MgrScripts</Filter>
+    </ClCompile>
+    <ClCompile Include="CMonsterScript.cpp">
+      <Filter>Scripts\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="CBulletScript.cpp">
+      <Filter>Scripts\GameSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="CPlayerHandScript.cpp">
+      <Filter>Scripts\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="CPlayerStatusScript.cpp">
+      <Filter>Scripts\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="CPlayerScript.cpp">
+      <Filter>Scripts\GameSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="CPickupScript.cpp">
+      <Filter>Scripts\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="CRayCastRendererScript.cpp">
+      <Filter>Scripts\GameSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="CFadeScript.cpp">
+      <Filter>Scripts\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="CLevelChangerScript.cpp">
+      <Filter>Scripts\MgrScripts</Filter>
+    </ClCompile>
+    <ClCompile Include="CTimerScript.cpp">
+      <Filter>Scripts\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="CCameraSideWalkScript.cpp">
+      <Filter>Scripts\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="CInterMissionScript.cpp">
+      <Filter>Scripts\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="CPlayerSelectWeapon.cpp">
+      <Filter>Scripts\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="CFontPrintScript.cpp">
+      <Filter>Scripts\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="CAlphaNoiseScript.cpp">
+      <Filter>Scripts\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="CUiAnimScript.cpp">
+      <Filter>Scripts\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="CDelayedInstantiator.cpp">
+      <Filter>Scripts\MgrScripts</Filter>
+    </ClCompile>
+    <ClCompile Include="CFlashFont.cpp">
+      <Filter>Scripts\UI</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
