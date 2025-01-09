@@ -28,9 +28,9 @@ VS_OUT VS_GrayFilter(VS_IN _in)
 {
     VS_OUT output = (VS_OUT) 0.f;
     
-    // Proj Çà·ÄÀ» °öÇÑ °á°ú´Â °¢ xyz ¿¡ ÀÚ½ÅÀÇ ViewZ °¡ °öÇôÁ®ÀÖ´Â ÇüÅÂÀÌ´Ù.
-    // W ÀÚ¸®¿¡ ÀÚ½ÅÀÇ ViewZ °¡ Ãâ·ÂµÇ±â ¶§¹®¿¡ ÀÌ°ÍÀ¸·Î °¢ xyz ¸¦ ³ª´©¾î¾ß ½ÇÁ¦ Proj ÁÂÇ¥°¡ ³ª¿Â´Ù.
-    // µû¶ó¼­ Rasterizer State ¿¡ Åõ¿µÇà·ÄÀ» °öÇÑ °á°ú¸¦ Àü´ŞÇÏ¸é °¢ xyz ¸¦ w ·Î ³ª´©¾î¼­ »ç¿ëÇÑ´Ù.    
+    // Proj í–‰ë ¬ì„ ê³±í•œ ê²°ê³¼ëŠ” ê° xyz ì— ìì‹ ì˜ ViewZ ê°€ ê³±í˜€ì ¸ìˆëŠ” í˜•íƒœì´ë‹¤.
+    // W ìë¦¬ì— ìì‹ ì˜ ViewZ ê°€ ì¶œë ¥ë˜ê¸° ë•Œë¬¸ì— ì´ê²ƒìœ¼ë¡œ ê° xyz ë¥¼ ë‚˜ëˆ„ì–´ì•¼ ì‹¤ì œ Proj ì¢Œí‘œê°€ ë‚˜ì˜¨ë‹¤.
+    // ë”°ë¼ì„œ Rasterizer State ì— íˆ¬ì˜í–‰ë ¬ì„ ê³±í•œ ê²°ê³¼ë¥¼ ì „ë‹¬í•˜ë©´ ê° xyz ë¥¼ w ë¡œ ë‚˜ëˆ„ì–´ì„œ ì‚¬ìš©í•œë‹¤.    
     output.vPosition = float4(_in.vPos.xy * 2.f, 0.f, 1.f);    
     output.vUV = _in.vUV;
     
@@ -87,8 +87,8 @@ VS_OUT VS_Distortion(VS_IN _in)
 
 float4 PS_Distortion(VS_OUT _in) : SV_Target
 {
-    // 1. ·»´õÅ¸°Ù ÇØ»óµµ Á¤º¸ (Àü¿ª »ó¼ö¹öÆÛ)    
-    // 2. ÇÈ¼¿½¦ÀÌ´õÀÇ ÇÈ¼¿ ÁÂÇ¥
+    // 1. ë Œë”íƒ€ê²Ÿ í•´ìƒë„ ì •ë³´ (ì „ì—­ ìƒìˆ˜ë²„í¼)    
+    // 2. í”½ì…€ì‰ì´ë”ì˜ í”½ì…€ ì¢Œí‘œ
     float2 vScreenUV = _in.vPosition.xy / g_Resolution;
        
     float2 vNoiseUV = vScreenUV;
@@ -145,7 +145,7 @@ float4 PS_Red(VS_OUT _in) : SV_Target
 
 float4 PS_Melting(VS_OUT _in) : SV_Target
 {
-    _in.vUV.y += -0.4f * g_Time * frac(sin(dot(float2(_in.vUV.x, _in.vUV.x), float2(50.9, 40.2))) * 437.5);
+    _in.vUV.y -= -0.4f * g_Time * frac(sin(dot(float2(_in.vUV.x, _in.vUV.x), float2(50.9, 40.2))) * 437.5);
     float4 vColor = g_tex_0.Sample(g_sam_1, _in.vUV);
     return vColor;
 }
